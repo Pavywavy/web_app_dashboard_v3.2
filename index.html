@@ -5,22 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web App | Pavlos V</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="toggle-switch.css">
+    <link rel="stylesheet" href="css/toggle-switch.css">
 </head>
 <body class="grid-container">
     <header>
- </header>
+        <h1>WebApp</h1>
+            <div><!--Bell Icon--></div>
+                <svg></svg>
+                <div><!-- notifications --></div>
+                <img>
+                <h3>Pavlos Valamontes</h3>
+     </header>
                 <nav>
+                    <a></a>
+                        <img>
                 </nav>
         <main>
-            <div class="main-header"> // row
+            <div class="main-header">
                 <h2 class="headline">Dashboard</h2>
                 <div class="tab"></div>
             </div>
                 <!-- alert banner -->
             <div class="alert" id="alert" >
                 <!-- JS will insert alert here -->
-            </div>
+            </div>  
+
+
                  <!-- line graph charts -->
                 <section class="traffic">
                         <div class="traffic-header">
@@ -32,19 +42,37 @@
                             <li class="traffic-nav-link">Monthly</li>
                             </ul>
                             </div>
-                            <div class="widget-container-full">
+                            <!-- Placeholder for line graph -->
+                            <img src="images/graph placeholder.jpg"/>
+                            <!-- <div class="widget-container-full"> -->
                  <!-- element line graph will attach to -->
-                            <canvas id="traffic-chart"></canvas>
-                        </div>
+                            <!-- <canvas id="traffic-chart"></canvas>
+                        </div> -->
                     </section>
+
+
                         <!-- bar graph -->
                     <section class="daily">
                         <h3>Daily Traffic</h3>
-                        <div class="widget-container-half">
+                         <!-- Placeholder for bar graph graph -->
+                         <img src="images/graph placeholder.jpg"/>
+                        <!-- <div class="widget-container-half"> -->
                         <!-- element bar graph will attach to -->
-                        <canvas id="daily-chart"></canvas>
-                    </div>
+                        <!-- <canvas id="daily-chart"></canvas>
+                    </div> -->
                         </section>
+                           <!-- doughnut graph -->
+                    <section class="daily">
+                        <h3>Mobile Users</h3>
+                         <!-- Placeholder for bar graph graph -->
+                         <img src="images/graph placeholder.jpg"/>
+                        <!-- <div class="widget-container-half"> -->
+                        <!-- element bar graph will attach to -->
+                        <!-- <canvas id="daily-chart"></canvas>
+                    </div> -->
+                        </section>
+
+
                         <div class="social-container">
                             <div class="social-image">
                             <!-- inline SVG not included for brevity  -->
@@ -58,6 +86,8 @@
                             elements for other social media items -->
                             </div>
                         </div>
+
+
                             <!-- new members widget-->
                                 <section class="members">
                                     <h3>New Members</h3>
@@ -72,6 +102,8 @@
                                     </div>
                                     <p>10/15/15</p>
                                     </div>
+
+                                
                                 <!-- messaging widget -->
                                     <section class="message">
                                         <h3>Message User</h3>
@@ -87,11 +119,12 @@
                                         <button class="button-primary" id="send" >Send</button>
                                         </form>
                                         </section>
+
                                 <!-- local settings widget -->
                                     <section class="settings">
                                         <h3>Settings</h3>
                                                         <label class="switch-light switch-candy" onclick="">
-                                                            <input type="checkbox">
+                                                            <input type="light switch">
                                                         
                                                             <strong>
                                                             Send Email Notifications
@@ -104,7 +137,7 @@
                                                             </span>
                                                         </label>
                                                         <label class="switch-light switch-candy" onclick="">
-                                                            <input type="checkbox">
+                                                            <input type="light switch">
                                                         
                                                             <strong>
                                                             Set profile to public
