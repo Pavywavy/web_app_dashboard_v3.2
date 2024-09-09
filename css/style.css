@@ -68,12 +68,13 @@ h1 {
 /* sidebar nav */
 .nav {
     display: flex;
+    justify-content:space-evenly;
     background-color: #4D4D72;
 }
 
-.nav img {
-    width: 1em;
-    color: white;
+.nav svg {
+    width: 1.5em;
+    padding: .5em;
 }
 
 
