@@ -1,6 +1,7 @@
 body {
     margin: 0;
 }
+
 /* temporarily adjusting img's to fit mobile view better */
 body img {
     width: 304px;
@@ -60,12 +61,11 @@ h1 {
     
 }
 
-
 .headerRightSide {
     display: flex;
     flex-direction: row;
 }
-/* sidebar nav */
+/* nav */
 .nav {
     display: flex;
     justify-content:space-evenly;
@@ -75,6 +75,23 @@ h1 {
 .nav svg {
     width: 1.5em;
     padding: .5em;
+}
+
+/* dashboard tab  */
+.tab h2 {
+    background-color: #FFFFFF;
+    color: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    margin: 0;
+    font-size: 17px;
+    width: 25%;
+  }
+
+.tab {
+    background-color: rgb(218, 217, 217);
 }
 
 
