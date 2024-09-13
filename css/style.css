@@ -50,7 +50,7 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: auto;
+    flex-grow: 1;
     gap: 4em;
 }
 
@@ -93,7 +93,30 @@ h1 {
 .tab {
     background-color: rgb(218, 217, 217);
 }
+/* styling for alert box */
+.alert {
+display: flex;
+justify-content: space-between;
+font-size: 12px;
+background-color:#7577B9;
+color: white;
+border-radius: 12px;
+padding: 14px;
+margin: 15px;
+}
 
+.alert div {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.alert p {
+    margin: 0;
+    padding: 0;
+}
 
 /* media screens for tablet */
 @media screen and (min-width: 768px) {
