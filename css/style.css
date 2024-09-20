@@ -147,14 +147,14 @@ h3 {
 
 /* styling for alert box */
 .alert {
-display: flex;
-justify-content: space-between;
-font-size: 12px;
-background-color:#7577B9;
-color: white;
-border-radius: 12px;
-padding: 14px;
-margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    background-color:#7577B9;
+    color: white;
+    border-radius: 12px;
+    padding: 14px;
+    margin: 15px;
 }
 
 .alert div {
@@ -251,12 +251,43 @@ margin: 15px;
 }
 
 /* user messaging area */
+.message {
+    padding-bottom: 1em;
+    border-bottom: .5px solid gray;
+}
+
 .widget-container {
     display: flex;
     flex-direction: column;
-    gap: 1px;
-    padding: 1em;
+    gap: 15px;
+    flex: 1;
     margin: 1em;
+}
+
+.form-field {
+    border: solid 1px rgb(215, 215, 215);
+    border-radius: .25em;
+    background-color: rgb(243, 243, 243);
+    height:2em;
+}
+
+.form-area {
+    height: 5em;
+    border-radius: .25em;
+    border: solid 1px rgb(215, 215, 215);
+    background-color: rgb(243, 243, 243);
+}
+
+#send {
+    color: white;
+    background-color: #7577B9;
+    border-style: none;
+    border-radius: .25em;
+    padding: 1em;
+}
+::placeholder {
+    color:lightgrey;
+    padding: 1em;
 }
 
 /* settings */
@@ -267,12 +298,31 @@ margin: 15px;
     align-items: center;
     margin-bottom: 2em;
 }
-
-.switches {
-    margin: 1em;
+.switch-light.switch-ios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 250px;
+    padding: 1em;
 
 }
 
+.switch-light.switch-ios::after {
+    background-color: #7577B9;
+    border-color: #7577B9;
+    box-shadow: inset 0 0 0 30px #7577B9;
+}
+
+.switches strong {
+    font-size: 14px;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+.switches {
+    margin-bottom: 1em;
+}
 
 /* media screens for tablet */
 @media screen and (min-width: 768px) {
