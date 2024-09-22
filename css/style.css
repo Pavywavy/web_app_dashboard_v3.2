@@ -362,11 +362,10 @@ h3 {
 
     .grid-container {
         display: grid; 
-        grid-template-columns: 1fr 7fr; 
-        grid-template-rows: 0.25fr 4fr; 
+        grid-template-columns: .25fr 7fr; 
         grid-template-areas: 
           "header header"
-          "nav nain"; 
+          "nav main"; 
       }
       .Main { 
         grid-area: main; 
@@ -381,14 +380,78 @@ h3 {
     .headerLeftSide{ display: flex;
         gap: 32em;
        }
+       x
+       main {
+        display: flex;
+        flex-direction: column;
+        width: 768px;
+    }
 
     h1 {
         font-size: 17px;
     }
 
+    .nav {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 4em;
+        align-items: center;
+    }
+    .nav svg:nth-child(0n+1) {
+        padding-top: 1em;
+    }
+    
+
+    .graphs {
+        display: flex;
+        justify-content: baseline;
+        align-items: flex-end;
+        flex: 1 0 auto;
+    }
+
+    .members-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .members-container img {
+        width: 4em;
+        padding: 1em;
+    }
+
+    .members-container p:nth-child(0n + 3) {
+        margin: 0 0 1em 0;
+        padding: 1em;
+    }
+
+    .settings {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 2em;
+    }
+
+    .timezoneSelection {
+        display: flex;
+        padding-left: 1em;
+        width: 87vw;
+    }
+    
+    .settings-button {
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+        width: auto;
+    }
+    
+
+
 }
 
-/* media screens for desktop  */
+/* media screens for tablet  */
 @media screen and (min-width: 1024px) {
+
 
 }
