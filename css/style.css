@@ -379,9 +379,13 @@ h3 {
 
     .headerLeftSide{ display: flex;
         gap: 32em;
-       }
-       x
-       main {
+    }
+    
+       .tab h2 {
+        width: fit-content;
+    }
+       
+    main {
         display: flex;
         flex-direction: column;
         width: 768px;
@@ -402,12 +406,13 @@ h3 {
         padding-top: 1em;
     }
     
+    .traffic {
+        border-bottom: .5px solid gray;
+    }
 
     .graphs {
         display: flex;
-        justify-content: baseline;
-        align-items: flex-end;
-        flex: 1 0 auto;
+        border-bottom: .5px solid gray;
     }
 
     .members-container {
@@ -426,6 +431,10 @@ h3 {
         padding: 1em;
     }
 
+    .members-text {
+        margin-right: auto;
+    }
+
     .settings {
         display: flex;
         flex-direction: column;
@@ -436,7 +445,8 @@ h3 {
     .timezoneSelection {
         display: flex;
         padding-left: 1em;
-        width: 87vw;
+        width: -webkit-fill-available;
+        padding-right: 16px;
     }
     
     .settings-button {
@@ -446,11 +456,31 @@ h3 {
         width: auto;
     }
     
+    .widget-container-full, .widget-container-half {
+        border-bottom: none;
+        padding: 1em;
+    }
+
+  .daily {
+        border-left: .5px solid gray;
+    }
+
+    .socialSection {
+        display: flex;
+        justify-content: space-around;
+        padding: 0px 0.15em;
+    }
+
+    .facebookContainer, .instagramContainer, .twitterContainer {
+        padding-right: 1em;
+        margin: 0;
+        width: 30vw;
+    }
 
 
 }
 
-/* media screens for tablet  */
+/* media screens for desktop  */
 @media screen and (min-width: 1024px) {
 
 
