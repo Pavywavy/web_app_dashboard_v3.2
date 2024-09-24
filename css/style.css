@@ -232,6 +232,7 @@ h3 {
     align-items: center;
     margin: 0;
     border-bottom: .5px solid gray;
+    padding: 0 0 1em 0;
 }
 
 .members-container img {
@@ -246,9 +247,15 @@ h3 {
     text-align: center;
 }
 
+.members-text p:nth-child(0n + 3) {
+    padding: 0 0 1em 0;
+}
+
+
 .members-container p:nth-child(0n + 3) {
     margin: 0 0 1em 0;
 }
+
 
 /* user messaging area */
 .message {
@@ -434,6 +441,11 @@ h3 {
     .members-text {
         margin-right: auto;
     }
+
+    .members-container p {
+        text-align: left;
+    }
+
 
     .settings {
         display: flex;
