@@ -518,7 +518,7 @@ h3 {
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         }
-    }
+
 
     .socialSection,
     .settings,
@@ -588,3 +588,5 @@ h3 {
         padding: .5em 0;
         margin: 0;
     }
+
+}
