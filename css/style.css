@@ -302,8 +302,16 @@ h3 {
 .settings {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-bottom: 2em;
+    
+}
+.switches,
+.timezoneSelection {
+    align-items: left;
+}
+
+.settings h3 {
+    align-items:left;
 }
 .switch-light.switch-ios {
     display: flex;
@@ -336,6 +344,7 @@ h3 {
 .timezoneSelection {
     display: flex;
     flex-direction: column;
+    padding: 1em;
 }
 
 .settings-button {
@@ -395,7 +404,7 @@ h3 {
     main {
         display: flex;
         flex-direction: column;
-        width: 768px;
+        width: 100%;
     }
 
     h1 {
@@ -474,7 +483,14 @@ h3 {
         padding: 1em;
     }
 
+    section.daily {
+        box-sizing: border-box;
+        flex:1;
+    }
+
   .daily:nth-child(2) {
+        box-sizing: border-box;
+        flex:1;
         border-left: .5px solid gray;
     }
 
@@ -495,10 +511,49 @@ h3 {
 
 /* media screens for desktop  */
 @media screen and (min-width: 1024px) {
+    .memberContentArea {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+    }
+
+    .socialSection,
+    .settings,
+    .members,
+    .recentActivity {
+        border-left: .5px solid gray;
+        margin: 0;
+        padding: 0;
+    }
+
+    #messageField {
+        height: 10em;
+    }
+
+    #save,
+    #cancel {
+        height: 42px;
+    }
+
     main {
         display: flex;
         flex-direction: column;
         width: 100%;
+    }
+
+    .traffic-nav {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1em;
+        padding: 0 1em;
+    }
+
+    .socialSection {
+        padding-bottom: 1em;
+        border-bottom: .5px solid gray;
     }
 
     .facebookContainer, .instagramContainer, .twitterContainer {
@@ -506,6 +561,15 @@ h3 {
         padding-right: 3em;
         width: 25vw;
         
+    }
+
+    .widget-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .message {
+        padding: 0;
     }
 
     .graphs {
@@ -524,4 +588,3 @@ h3 {
         padding: .5em 0;
         margin: 0;
     }
-}
