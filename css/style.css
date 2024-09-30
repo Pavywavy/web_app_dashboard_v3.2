@@ -22,6 +22,15 @@ h1 {
 
 /* bell animation  */
 
+.notification {
+    position: relative;
+    top: -11px;
+    right: -27px;
+    padding: 3px;
+    border-radius: 50%;
+    background-color: rgb(18, 219, 95);
+}
+
 .bellIcon:hover {
     animation: bellRing 4s ease-in-out 1;
 }
@@ -350,7 +359,7 @@ h3 {
 .settings-button {
     display: flex;
     justify-content: space-between;
-    width: 80vh;
+    width: auto;
     padding-top: 1em;
 }
 
