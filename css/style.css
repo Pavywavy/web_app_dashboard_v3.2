@@ -265,6 +265,9 @@ h3 {
     margin: 0 0 1em 0;
 }
 
+.lessThanSymbol {
+    display:none;
+}
 
 /* user messaging area */
 .message {
@@ -467,6 +470,9 @@ h3 {
         text-align: left;
     }
 
+    .lessThanSymbol {
+        display:inline-block;
+    }
 
     .settings {
         display: flex;
